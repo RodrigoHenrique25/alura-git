@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<button>Entre com o número de jogos que quer jogar:</button>
+<input/>
+<script>
+function pulaLinha() {
+
+document.write("<br>");
+}
+
+function mostra(x) {
+
+document.write(x);
+pulaLinha();
+}
+
+var input = document.querySelector("input");
+
+
+
+function verifica() {
+    for(var contador = 0; contador < input.value ; contador++) {
+
+var numeroPensado1 = Math.round(Math.random() * 60);
+var numeroPensado2 = Math.round(Math.random() * 60);
+var numeroPensado3 = Math.round(Math.random() * 60);
+var numeroPensado4 = Math.round(Math.random() * 60);
+var numeroPensado5 = Math.round(Math.random() * 60);
+var numeroPensado6 = Math.round(Math.random() * 60);
+
+    mostra(numeroPensado1+ ", " + numeroPensado2 + ", " + numeroPensado3 + ", " + numeroPensado4 + ", " + numeroPensado5 + ", " + numeroPensado6 + ".");
+        
+
+} }
+
+
+var button = document.querySelector("button");
+button.onclick = verifica;
+
+</script>

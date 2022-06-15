@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<script>
+ function pulaLinha() {
+
+    document.write("<br>");
+ }
+
+ function mostra(x) {
+
+    document.write(x);
+    pulaLinha();
+ }
+
+ var anoatual = 2022;
+ var primeira = 1930;
+ var pedido = parseInt(prompt("Entre com um ano:"));
+
+ var calculo1 = (pedido - primeira)/4;
+
+ var calculo2 = (anoatual - pedido)/4;
+
+ if(pedido > 1930 && (anoatual - pedido ) % 4 == 0) {
+     mostra("Até o ano escolhido, existiram " + calculo1 + " copas do mundo! Faltam " + calculo2 + " para chegar na copa atual, que é a copa número " + ((anoatual - primeira)/4) + "!"); }
+     else { mostra("Não teve copa neste ano.")};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
